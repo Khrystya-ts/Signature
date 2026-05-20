@@ -35,10 +35,9 @@
 
 Проєкт використовує лише вбудовані модулі Node.js — додаткових залежностей немає.
 
-```bash
-git clone https://github.com/your-username/rsa-signature-toolkit.git
-cd rsa-signature-toolkit
-```
+
+![Screnshot] (https://github.com/PokotyloTaras/key_creating_and_signing/blob/main/Assets/copying.png)
+
 
 > Переконайтеся, що у вас встановлено [Node.js](https://nodejs.org/) версії **14** або вище.
 
