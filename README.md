@@ -129,7 +129,7 @@ node signatureCheck.js
 | `signature.sig` | Цифровий підпис |
 | `public_key.pem` | Для перевірки підпису |
 
-`private_key.pem` **Заборонено передавати в чужі руки**.
+`private_key.pem` **Заборонено передавати в чужі руки.**
 
 ---
 
