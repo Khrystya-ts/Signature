@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Електронний підпис файлу</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h2>Згенерувати ключі користувача</h2>
+      <button type="button" id="btnKeys">Згенерувати ключі</button>
+      <p id="keysResult" class="result" hidden></p>
+      <pre id="publicKeyBox" class="box" hidden></pre>
+    </section>
+
+    <section class="card">
+      <h2>Підписати документ</h2>
+      <label class="file-label">Документ
+        <input type="file" id="signDoc" accept=".txt,text/plain,*/*" />
+      </label>
+      <button type="button" id="btnSign">Підписати</button>
+      <p id="signResult" class="result" hidden></p>
+      <button type="button" class="secondary" id="btnDownloadSig" hidden>Завантажити signature.sig</button>
+    </section>
+
+    <section class="card">
+      <h2>Перевірити підпис</h2>
+      <label class="file-label">Документ
+        <input type="file" id="verifyDoc" accept=".txt,text/plain,*/*" />
+      </label>
+      <label class="file-label">Підпис (необов’язково)
+        <input type="file" id="verifySig" accept=".sig,.txt,text/plain,*/*" />
+      </label>
+      <button type="button" id="btnVerify">Перевірити</button>
+      <p id="verifyResult" class="result" hidden></p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
