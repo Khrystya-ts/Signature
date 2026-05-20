@@ -31,22 +31,10 @@
 
 ---
 
-## 🚀 Встановлення
-
-Проєкт використовує лише вбудовані модулі Node.js — додаткових залежностей немає.
-
-```bash
-git clone https://github.com/your-username/rsa-signature-toolkit.git
-cd rsa-signature-toolkit
-```
-
-> Переконайтеся, що у вас встановлено [Node.js](https://nodejs.org/) версії **14** або вище.
-
----
-
 ## 📁 Структура проєкту
 
 ```
+
 rsa-signature-toolkit/
 ├── generateKeys.js     # Генерація RSA-ключів
 ├── signFile.js         # Підписання файлу
@@ -56,6 +44,26 @@ rsa-signature-toolkit/
 ├── private_key.pem     # Приватний ключ (генерується)
 └── signature.sig       # Підпис файлу (генерується)
 ```
+
+
+---
+
+## 🚀 Встановлення
+
+Проєкт використовує лише вбудовані модулі Node.js — додаткових залежностей немає.
+---
+
+Щоб зробити клон репозиторія нажміть на кнопку позначену цифрою 1, а потім скопіюйте посилання кнопкою позначену цифрою 2
+
+
+
+<img width="1076" height="650" alt="copying" src="https://github.com/user-attachments/assets/4a6bd579-1d87-4b86-b1e5-280e092ae45b" />
+
+---
+
+Далі відкрийте CMD, де введіть git clone та вставе скопійоване посилання
+
+<img width="1185" height="671" alt="image" src="https://github.com/user-attachments/assets/648c32d4-c939-4e7d-9016-4f7bfff4d306" />
 
 ---
 
@@ -121,7 +129,8 @@ node signatureCheck.js
 | `signature.sig` | Цифровий підпис |
 | `public_key.pem` | Для перевірки підпису |
 
-`private_key.pem` **Заборонено передавати в чужі руки**.
+> [!WARNING]
+>`private_key.pem` **Заборонено передавати в чужі руки.**
 
 ---
 
@@ -167,12 +176,6 @@ document.txt + private_key ──────────►│    │
 | ![Node.js](https://img.shields.io/badge/Node.js-14%2B-339933?logo=node.js&logoColor=white) | Середовище виконання |
 | `crypto` | Вбудований модуль для криптографічних операцій |
 | RSA-2048 + SHA-256 | Алгоритм підпису |
-
----
-
-## 📄 Ліцензія
-
-[MIT](LICENSE)
 
 ---
 
